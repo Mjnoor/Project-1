@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Registeration form</title>
+	<style>
+
+body{
+	background-image: url('img1122.JPEG'); 
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+h1{
+	background-color: steelblue;
+	text-align: center;
+	color:whitesmoke;
+    font-family: sans-serif;
+    font-size:200%;
+}
+h2{
+	text-align: center;
+	 	color: steelblue;
+        font-family:sans-serif;
+        font-size:150%;
+        margin-top: 50px;
+}
+
+.container{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.Register-form{
+	height: 600px;
+	width: 500px;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	color: #fff;
+	padding-top: 60px;
+	margin-top: 50px;
+	text-align: center;
+
+}
+input{
+	width: 90%;
+	margin-top: 20px;
+	background: transparent;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	border-radius: 30px;
+	box-shadow: 0 0 4px;
+	color: black;
+	transition:0.5s ease;
+
+}
+.btn{
+	display: block;
+	width: 50%;
+	background: #2e2e3a;
+	border: none;
+	font-size: 14px;
+	padding: 15px;
+	outline: none;
+	border-radius: 40px;
+	color: #fff;
+	margin: 20px auto;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1) 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+input[placeholder] {
+	color: white;
+	font-size: 16px;
+}
+input:focus,
+
+.btn:hover{
+	opacity: .8;
+}
+
+
+.malefemale{
+	padding: 12px;
+	color: black;
+	font-size: 16px;
+	text-align: left;
+	margin-left: 80px;
+}
+.gender{
+	min-height: 35px;
+	background: lightgrey;
+	border-radius: 3px;
+	border: 2px solid slategrey; 
+	outline: none;
+	padding: 0 10px;
+	width: 40%;
+	cursor: pointer;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.field{
+	padding-top: 0px;
+	padding: 12px;
+	color: black;
+	border-radius: 5px;
+	font-size: 16px;
+	text-align: right;
+	margin-right: 100px;
+	margin-top: -82px;
+
+}
+
+.course{
+	min-height: 35px;
+	background: lightgrey;
+	border-radius: 3px;
+	border: 2px solid slategrey;
+	outline: none;
+	padding: 0 10px;
+	width: 40%;
+	cursor: pointer;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: 250px;
+	
+}
+
+	</style>
+</head>
+<body>
+	<h1>Central Institute of Management Sciences</h1>
+	<h2>Get Registered</h2>
+<form>
+	<div class="container">
+	<div class="Register-form">
+	<div class="Register"> </div>
+	
+	<input type="text" placeholder="First name" >
+	<input type="text" placeholder="Last name" >
+	<input type="text" placeholder="E-mail address" >
+
+	<label class="malefemale"> Gender:</label>
+	
+	<select name="gender" class="gender"> 
+	<option value="gender">Male</option>
+	<option value="gender">Female</option>
+	<option value="gender">other</option>
+	</select>
+
+
+	<label class="field"> Select Field:</label>
+
+	<select name="course" class="course">
+
+		<optgroup label="Assosiate degree"></optgroup>
+		<option value="Course"> ADP computer science</option>
+		<option value="Course">ADP commerce</option>
+		<option value="Course">ADP Finance</option>
+
+		<optgroup label="Undergradute degree"></optgroup>
+		<option value="Course">BBA </option>
+		<option value="Course">BSIT </option>
+		<option value="Course">BSCS </option>
+		<option value="Course">Bcom </option>
+		<option value="Course">BSc </option>
+		<option value="Course">BA </option>
+
+		<optgroup label=" Postgraduate degree"></optgroup>
+		<option value="Course">MBA </option>
+		<option value="Course">MSIT </option>
+		<option value="Course">Mcom </option>
+		<option value="Course">Msc </option>
+		<option value="Course">MA </option>
+		<option value="Course">Mphil </option>
+
+	</select>
+
+	<input type="date" placeholder="DD-MM-YYYY" >
+	<input type="Phone" placeholder="+92**********" >
+	<input type="Password" placeholder="Password" >
+	<input type="Password" placeholder="Confirm password" >
+	<div class="btn">Register</div>
+	<div>Already a member?<a href="login.html">Login now</a></div>
+	
+	</div>
+	</div>
+</form>
+
+</body>
+
+</html>
